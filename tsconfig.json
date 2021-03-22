@@ -10,11 +10,19 @@
     "esModuleInterop": true,
     "module": "ESNext",
     "moduleResolution": "Node",
+    "typeRoots": ["node_modules/@types", "src/@types"],
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": "src",
-    "paths": {}
+    "paths": {
+      "@config/*": ["config/*"],
+      "@lib/*": ["lib/*"],
+      "@graphql/*": ["graphql/*"],
+      "@contexts/*": ["contexts/*"],
+      "@components/*": ["components/*"],
+      "@styles/*": ["styles/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
