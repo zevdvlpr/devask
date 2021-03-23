@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
   } 
   
   body {              
-    background: ${({ theme }) => theme.purple};
+    background: ${({ theme }) => theme.background};
     
     -webkit-font-smoothing: antialiased;
   }
@@ -27,6 +27,8 @@ export const GlobalStyles = createGlobalStyle`
   body, input, textarea, button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    
+    color: ${({ theme }) => theme.white};
   }
   
   h1, h2, h3, h4, h5, h5, strong {
